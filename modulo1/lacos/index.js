@@ -78,12 +78,19 @@ descobrirNumerosParesDoArray(array)
 
 
 //Resposta d)
-let mensagem = "índex";
+function imprimirArrayDeStrings (array){
+    let arrayDeStrings = []
+    let i = 0
 
-for (let palavra of array) {
-    console.log(`O elemento do ${mensagem} é ${palavra}`)
-    mensagem = `${mensagem} ${palavra}`
-}
+    for(let valor of array) {
+      arrayDeStrings.push(`O elemento do índex ${i} é: ${valor}`); i++
+    }
+
+    console.log(arrayDeStrings)
+  }
+
+imprimirArrayDeStrings (array)
+ 
 
 
 //Resposta e)
@@ -91,12 +98,12 @@ let maiorNumero = 0;
 let menorNumero = 1000
 
 for(numeroDoArray of array) {
-    if (maiorNumero < array){
+    if (maiorNumero < numeroDoArray){
         maiorNumero = numeroDoArray
     }else if (menorNumero > numeroDoArray) {
         menorNumero = numeroDoArray
     }
     
-    console.log(`O maior número é ${maiorNumero} e o menor número é ${menorNumero}`)
-
     }
+
+    console.log(`O maior número é ${maiorNumero} e o menor número é ${menorNumero}`)
